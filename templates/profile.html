@@ -1,0 +1,6 @@
+<!-- profile edit form passed in from view -->
+<form method="post" action="{% url 'profile' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Save</button>
+</form>
